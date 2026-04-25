@@ -8,7 +8,7 @@ SharePay is an iOS app that connects people who **need cash** with people who **
 
 ## 🎬 Demo Video
 
-[![SharePay Demo] https://youtu.be/4YRRhLFHDYY
+[![SharePay Demo] https://youtube.com/shorts/dUew1FSk_T8?feature=share
 
 *▶️ 60-second walkthrough — click the thumbnail to watch on YouTube.*
 
