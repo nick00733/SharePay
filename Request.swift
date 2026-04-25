@@ -2,8 +2,7 @@ import Foundation
 import FirebaseFirestore
 
 // ─────────────────────────────────────────────────────────────
-//  Request.swift
-//  Model for a SharePay cash exchange request
+//  Request.swift  (UPDATED with location fields)
 //  Stored in Firestore collection "requests"
 // ─────────────────────────────────────────────────────────────
 
@@ -14,27 +13,27 @@ struct Request: Codable, Identifiable {
     var type: String = "needsCash"   // "needsCash" or "hasCash"
     var amount: Double = 0.0
     var note: String = ""
+    var address: String = ""           // NEW: human-readable address
+    var latitude: Double = 0.0         // NEW: pin coordinate
+    var longitude: Double = 0.0        // NEW: pin coordinate
     var createdAt: Date = Date()
     
-    // MARK: - Computed Properties (Hybrid Fee Model from Strategy Doc)
+    // MARK: - Computed Properties
     
     /// Total SharePay fee using hybrid model: max($2.00, 2.5% of amount)
     var fee: Double {
         max(2.00, amount * 0.025)
     }
     
-    /// Responder's share of the fee (70%)
-    var responderShare: Double {
-        fee * 0.70
-    }
+    var responderShare: Double { fee * 0.70 }
+    var platformShare: Double { fee * 0.30 }
     
-    /// SharePay's share of the fee (30%)
-    var platformShare: Double {
-        fee * 0.30
-    }
-    
-    /// Human-readable type label
     var typeLabel: String {
         type == "needsCash" ? "Needs Cash" : "Has Cash"
+    }
+    
+    /// True if a real location was set (not the default 0,0)
+    var hasLocation: Bool {
+        latitude != 0.0 && longitude != 0.0
     }
 }

@@ -2,9 +2,9 @@ import SwiftUI
 import FirebaseAuth
 
 // ─────────────────────────────────────────────────────────────
-//  LoginView.swift
-//  SharePay — Email/Password Login & Sign-Up
-//  Follows the course pattern (Snacktacular Ch. 8.2 / Hackathon)
+//  LoginView.swift  (UPDATED — only one line changed!)
+//  After login, launches MainTabView (which contains both
+//  the list AND the map).
 // ─────────────────────────────────────────────────────────────
 
 struct LoginView: View {
@@ -98,8 +98,9 @@ struct LoginView: View {
             .alert(alertMessage, isPresented: $showingAlert) {
                 Button("OK", role: .cancel) {}
             }
+            // ⬇️ THE ONLY CHANGE: now launches MainTabView instead of ListView
             .fullScreenCover(isPresented: $presentSheet) {
-                ListView()
+                MainTabView()
             }
         }
     }
