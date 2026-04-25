@@ -8,11 +8,11 @@ SharePay is an iOS app that connects people who **need cash** with people who **
 
 ## 🎬 Demo Video
 
-[![SharePay Demo](https://img.youtube.com/vi/VIDEO_ID_HERE/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_HERE)
+[![SharePay Demo](https://img.youtube.com/vi/https://youtu.be/4YRRhLFHDYY/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_HERE)
 
 *▶️ 60-second walkthrough — click the thumbnail to watch on YouTube.*
 
-> **TODO before submitting:** Replace `VIDEO_ID_HERE` (both occurrences above) with your actual YouTube video ID after upload. The ID is the part after `?v=` in your YouTube URL.
+> **TODO before submitting:** Replace `https://youtu.be/4YRRhLFHDYY` (both occurrences above) with your actual YouTube video ID after upload. The ID is the part after `?v=` in your YouTube URL.
 
 ---
 
