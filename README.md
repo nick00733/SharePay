@@ -17,6 +17,8 @@ SharePay is an iOS app that connects people who **need cash** with people who **
 
 ## 🌟 What It Does
 
+<img width="494" height="999" alt="image" src="https://github.com/user-attachments/assets/ec4ec2aa-178d-4266-868d-3a42011bcb03" />
+
 Imagine you're at a farmer's market that only takes cash, but you only have digital money. Or you have $100 sitting in your wallet that you'd rather have in your bank account. **SharePay solves both problems at once** by matching these users locally:
 
 - **Receivers** post a request for cash (they pay digitally)
