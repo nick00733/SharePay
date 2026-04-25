@@ -149,6 +149,7 @@ This project was developed with the assistance of **Claude (Anthropic)** for:
 - Real-time debugging during the build sprint
 
 A separate **AI usage summary video** is submitted alongside this project as part of the course requirements.
+https://youtube.com/shorts/4fk2eWIuE74?feature=share
 
 ---
 
